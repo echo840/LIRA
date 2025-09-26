@@ -42,11 +42,24 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 ```python 
 python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-2B.py ./model_weight/LIRA-2B.pth
 ```
-```python 
-python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-8B.py ./model_weight/LIRA-8B.pth
-```
 
 ## Train
+
+1.Pretrain
+```python 
+bash ./scripts/pretrain.sh 
+```
+2. After train, please use the tools to convert deepspeed chekpoint to pth format
+```python 
+python omg_llava/tools/convert_deepspeed2pth.py
+    ${PATH_TO_CONFIG} \
+    ${PATH_TO_DeepSpeed_PTH} \
+    --save-path ./pretrained/omg_llava/${PTH_NAME.pth}
+```
+3. Finetune
+```python 
+bash ./scripts/pretrain.sh
+```
 
 
 ## Evaluation

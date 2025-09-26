@@ -15,7 +15,7 @@ LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved 
 > Zhang Li, Biao Yang, Qiang Liu, Shuo Zhang, Zhiyin Ma, Liang Yin, Linger Deng, Yabo Sun, Yuliang Liu, Xiang Bai <br>
 [![arXiv](https://img.shields.io/badge/Arxiv-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.06272) 
 [![Source_code](https://img.shields.io/badge/Code-Available-white)](README.md)
-[![Model Weight](https://img.shields.io/badge/HuggingFace-gray)](https://huggingface.co/echo840/)
+[![Model Weight](https://img.shields.io/badge/HuggingFace-gray)](https://huggingface.co/echo840/LIRA)
 
 
 ## Abstract
@@ -60,7 +60,7 @@ python omg_llava/tools/convert_deepspeed2pth.py
 
 3. Finetune
 ```python 
-bash ./scripts/pretrain.sh
+bash ./scripts/finetune.sh
 ```
 
 

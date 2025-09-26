@@ -1,0 +1,1 @@
+torchrun --master_port=29501 -m torch.distributed.launch --nproc_per_node=1 ./omg_llava/tools/refcoco_lira.py ./omg_llava/configs/finetune/LIRA-2B.py ./model_weight/LIRA-2B.pth  --dataset refcoco_plus --split testB --launcher pytorch --save_name LIRA-2B

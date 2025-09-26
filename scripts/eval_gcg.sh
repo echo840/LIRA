@@ -1,0 +1,3 @@
+torchrun --master_port=29501 -m torch.distributed.launch  --nproc_per_node=3  ./omg_llava/tools/gcg_lira.py  ./omg_llava/configs/finetune/LIRA-2B.py ./model_weight/LIRA-2B.pth --output-name gcg_pred_2B --launcher pytorch
+python omg_llava/tools/evaluate_gcg.py --prediction_dir_path ./results/gcg_pred_2B --gt_dir_path ./data/glamm_data/annotations/gcg_val_test/ --split val
+python omg_llava/tools/evaluate_gcg.py --prediction_dir_path ./results/gcg_pred_2B  --gt_dir_path ./data/glamm_data/annotations/gcg_val_test/ --split test

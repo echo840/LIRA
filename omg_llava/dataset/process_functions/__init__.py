@@ -1,0 +1,6 @@
+from .gcg_process import glamm_refcocog_map_fn, glamm_granf_map_fn, glamm_openpsg_map_fn, glamm_flickr_map_fn
+from .referring_seg_process import referring_seg_map_fn, referring_seg_gcg_format_map_fn
+from .decoupled_gcg_process import glamm_openpsg_decoupled_given_objects_map_fn, glamm_openpsg_decoupled_given_description_map_fn,\
+    glamm_flickr_decoupled_given_objects_map_fn, glamm_flickr_decoupled_given_description_map_fn,\
+    glamm_granf_decoupled_given_objects_map_fn, glamm_granf_decoupled_given_description_map_fn,\
+    glamm_refcocog_decoupled_given_description_map_fn, glamm_refcocog_decoupled_given_objects_map_fn

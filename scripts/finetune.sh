@@ -1,0 +1,1 @@
+torchrun --master_port=29501 -m torch.distributed.launch --nproc_per_node=1  ./xtuner/tools/train.py  ./omg_llava/configs/finetune/LIRA-2B.py  --deepspeed deepspeed_zero2 --launcher pytorch

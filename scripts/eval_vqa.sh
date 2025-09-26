@@ -1,0 +1,1 @@
+bash /home/kas/lz_new/LIRA/internvl/eval_lira.sh  ./omg_llava/configs/finetune/LIRA-2B.py ./model_weight/LIRA-2B.pth

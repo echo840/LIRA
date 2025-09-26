@@ -64,7 +64,7 @@ bash ./scripts/pretrain.sh
 python omg_llava/tools/convert_deepspeed2pth.py
     ${PATH_TO_CONFIG} \
     ${PATH_TO_DeepSpeed_PTH} \
-    --save-path ./pretrained/omg_llava/${PTH_NAME.pth}
+    --save-path ./pretrained/${PTH_NAME.pth}
 ```
 
 3. Finetune

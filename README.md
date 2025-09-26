@@ -49,6 +49,7 @@ python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-2B.py ./m
 ```python 
 bash ./scripts/pretrain.sh 
 ```
+
 2. After train, please use the tools to convert deepspeed chekpoint to pth format
 ```python 
 python omg_llava/tools/convert_deepspeed2pth.py
@@ -56,6 +57,7 @@ python omg_llava/tools/convert_deepspeed2pth.py
     ${PATH_TO_DeepSpeed_PTH} \
     --save-path ./pretrained/omg_llava/${PTH_NAME.pth}
 ```
+
 3. Finetune
 ```python 
 bash ./scripts/pretrain.sh

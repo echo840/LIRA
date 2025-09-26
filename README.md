@@ -23,10 +23,12 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 
 
 ## Overview
-
+<a href="https://zimgs.com/i/EjHWis"><img src="https://v1.ax1x.com/2025/09/26/EjHWis.png" alt="EjHWis.png" border="0" /></a>
 
 
 ## Results
+<a href="https://zimgs.com/i/EjHv7a"><img src="https://v1.ax1x.com/2025/09/26/EjHv7a.jpg" alt="EjHv7a.jpg" border="0" /></a>
+
 
 
 ## Install
@@ -37,16 +39,41 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 
 
 ## Demo
-
+```python 
+python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-2B.py ./model_weight/LIRA-2B.pth
+```
+```python 
+python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-8B.py ./model_weight/LIRA-8B.pth
+```
 
 ## Train
+```python 
+bash ./scripts/eval_gcg.sh #  Evaluation on Grounded Conversation Generation Tasks.
 
+bash ./scripts/eval_refseg.sh # Evaluation on Referring Segmentation Tasks.
+
+bash ./scripts/eval_vqa.sh # Evaluation on Comprehension Tasks.
+```
 
 ## Evaluation
 
 
+
 ## Acknowledgments
+Our code is built upon [OMGLLaVA](https://github.com/lxtGH/OMG-Seg) and [InternVL2](https://github.com/OpenGVLab/InternVL), and we sincerely thank them for providing the code and base models.
+
 
 ## Citation
-
+If you wish to refer to the baseline results published here, please use the following BibTeX entries:
+```BibTeX
+@misc{li2025lirainferringsegmentationlarge,
+      title={LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance}, 
+      author={Zhang Li and Biao Yang and Qiang Liu and Shuo Zhang and Zhiyin Ma and Liang Yin and Linger Deng and Yabo Sun and Yuliang Liu and Xiang Bai},
+      year={2025},
+      eprint={2507.06272},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.06272}, 
+}
+```
 

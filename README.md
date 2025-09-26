@@ -45,7 +45,7 @@ python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-2B.py ./m
 
 ## Train
 
-1.Pretrain
+1. Pretrain
 ```python 
 bash ./scripts/pretrain.sh 
 ```

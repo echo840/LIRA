@@ -34,8 +34,8 @@ from mmdet.models.task_modules.samplers import MaskPseudoSampler
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
-llm_name_or_path = '/home/kas/data/llm/internvl8b'  # Please change to your own path
-pretrained_pth = "/home/kas/lz_new/omginternvl/saved_path/dream/8b/pretrain_8b.pth"
+llm_name_or_path = './pretrained/InternVL2-8B'   # Please change to your own path
+pretrained_pth = "./pretrained/omg_llava/lira_8b_pre.pth"
 omg_ov_class_embed_path='./pretrained/omg_llava/convnext_large_d_320_CocoPanopticOVDataset.pth' # Please change to your own path
 omg_head_pretrain_pth_path = './pretrained/omg_llava/omg_seg_convl.pth'  # Please change to your own path
 

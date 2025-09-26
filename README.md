@@ -47,6 +47,9 @@ python ./omg_llava/tools/app_lira.py ./omg_llava/configs/finetune/LIRA-8B.py ./m
 ```
 
 ## Train
+
+
+## Evaluation
 ```python 
 bash ./scripts/eval_gcg.sh #  Evaluation on Grounded Conversation Generation Tasks.
 
@@ -54,9 +57,6 @@ bash ./scripts/eval_refseg.sh # Evaluation on Referring Segmentation Tasks.
 
 bash ./scripts/eval_vqa.sh # Evaluation on Comprehension Tasks.
 ```
-
-## Evaluation
-
 
 
 ## Acknowledgments

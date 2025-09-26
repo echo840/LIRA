@@ -36,6 +36,15 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 
 
 ## Weights
+1. Download model
+```python 
+python download_model.py -n echo840/LIRA
+```
+
+2. Download InternVL
+```python 
+python download_model.py -n OpenGVLab/InternVL2-2B # OpenGVLab/InternVL2-8B
+```
 
 
 ## Demo

@@ -7,7 +7,7 @@ LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved 
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-black.svg?logo=HuggingFace)](https://huggingface.co/echo840/LIRA)
 [![GitHub issues](https://img.shields.io/github/issues/echo840/LIRA?color=critical&label=Issues)](https://github.com/echo840/LIRA/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/echo840/LIRA?color=success&label=Issues)](https://github.com/echo840/LIRA/issues?q=is%3Aissue+is%3Aclosed)
-[![GitHub views](https://komarev.com/ghpvc/?username=Yuliang-Liu&repo=LIRA&color=brightgreen&label=Views)](https://github.com/echo840/LIRA)
+[![GitHub views](https://komarev.com/ghpvc/?username=echo840&repo=LIRA&color=brightgreen&label=Views)](https://github.com/echo840/LIRA)
 </div>
 
 

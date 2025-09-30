@@ -293,19 +293,6 @@ model = dict(
 #                      PART 3  Dataset & Dataloader                   #
 #######################################################################
 debug=False
-llava_dataset = dict(
-    type=LLaVADataset,
-    data_path=data_path,
-    image_folder=image_folder,
-    tokenizer=tokenizer,
-    image_processor=image_processor,
-    dataset_map_fn=llava_map_fn,
-    template_map_fn=dict(
-        type=template_map_fn_factory, template=prompt_template),
-    max_length=max_length,
-    pad_image_to_square=True,
-    max_patch=max_patch,
-    debug=debug)
 
 internvl2_dataset = dict(
     type=LLaVADataset,

@@ -291,7 +291,7 @@ class VQADataset(torch.utils.data.Dataset):
         data = json.loads(self.test[idx].strip())
         image, question, question_id, annotation = data['image'], data[
             'question'], data['question_id'], data.get('answer', None)
-        image = "internvl/"+image
+        image = image
         few_shot_prompt = ''
         if self.few_shot > 0:
             few_shot_samples = random.sample(self.train, self.few_shot)

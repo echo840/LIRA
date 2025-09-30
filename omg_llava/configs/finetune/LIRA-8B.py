@@ -40,12 +40,8 @@ omg_ov_class_embed_path='./pretrained/omg_llava/convnext_large_d_320_CocoPanopti
 omg_head_pretrain_pth_path = './pretrained/omg_llava/omg_seg_convl.pth'  # Please change to your own path
 
 # Data
-data_root = './data/llava_data/'
-data_path = data_root + 'LLaVA-Instruct-150K/llava_v1_5_mix665k.json'
-image_folder = data_root + 'llava_images'
-
-internvl2_datapath = "/home/kas/lz_new/omginternvl/data/final_common/stage2.json"
-internvl2_folder = "/home/kas/train_data_all/"
+internvl2_datapath = "./data/finetune"
+internvl2_folder = "./data/finetune/"
 
 
 glamm_data_root = './data/glamm_data/'

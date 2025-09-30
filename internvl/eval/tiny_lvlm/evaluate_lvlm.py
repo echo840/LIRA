@@ -51,7 +51,7 @@ TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float
 
 ds_collections = {
     'updated_datasets': {
-        'root': 'internvl/data/tiny_lvlm/updated_datasets/',
+        'root': 'data/tiny_lvlm/updated_datasets/',
         'max_new_tokens': 30,
         'min_new_tokens': 1,
     }

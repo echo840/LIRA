@@ -3,8 +3,6 @@ import os
 import re
 
 import torch
-# from internvl.model.internvl_chat import InternVLChatModel
-# from internvl.train.dataset import build_transform, dynamic_preprocess
 from PIL import Image
 from tqdm import tqdm
 from transformers import AutoTokenizer
@@ -167,11 +165,11 @@ if __name__ == '__main__':
                 print(question)
 
             
-            img_path = os.path.join('internvl/data/MME/MME_Benchmark_release_version', filename, img)
+            img_path = os.path.join('data/MME/MME_Benchmark_release_version', filename, img)
             if os.path.exists(img_path):
                 pass
             else:
-                img_path = os.path.join('internvl/data/MME/MME_Benchmark_release_version', filename,'images', img)
+                img_path = os.path.join('data/MME/MME_Benchmark_release_version', filename,'images', img)
             pixel_values,internvl_pixel_values = load_image(img_path, image_size, image_processor,max_num=args.max_num,min_num=args.min_num)
             generation_config = GenerationConfig(
                 num_beams=args.num_beams,

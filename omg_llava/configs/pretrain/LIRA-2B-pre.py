@@ -30,13 +30,13 @@ from mmdet.models.task_modules.samplers import MaskPseudoSampler
 #                          PART 1  Settings                           #
 #######################################################################
 # Model or model paths
-llm_name_or_path = '/home/kas/lz_new/ref_monkey/InternVL/pretrain_weight/internvl2_2b' # Please change to your own path
+llm_name_or_path = './pretrained/InternVL2-2B' # Please change to your own path
 omg_ov_class_embed_path='./pretrained/omg_llava/convnext_large_d_320_CocoPanopticOVDataset.pth' # Please change to your own path
 omg_head_pretrain_pth_path = './pretrained/omg_llava/omg_seg_convl.pth'  # Please change to your own path
 
 # Data paths
-data_path = "/home/kas/lz_new/omginternvl/data/final_common/stage1.json"
-image_folder = "/home/kas/train_data_all"
+data_path = "./data/pretrained/stage1.json"
+image_folder = "./data/pretrained"
 # prompt_template = PROMPT_TEMPLATE.internlm2_chat
 prompt_template = PROMPT_TEMPLATE.internvl2_chat
 # max_length = int(2048 - (1024 / 64)**2)

@@ -7,8 +7,6 @@ import time
 from functools import partial
 
 import torch
-# from internvl.model.internvl_chat import InternVLChatModel
-# from internvl.train.dataset import build_transform, dynamic_preprocess
 from PIL import Image
 from tqdm import tqdm
 from transformers import AutoTokenizer
@@ -54,8 +52,8 @@ from tqdm import tqdm
 TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float32, auto='auto')
 ds_collections = {
     'pope': {
-        'root': 'internvl/data/pope/val2014',
-        'question': 'internvl/data/pope/llava_pope_test.jsonl',
+        'root': 'data/coco/val2014',
+        'question': 'data/pope/llava_pope_test.jsonl',
         'metric': None,
         'max_new_tokens': 100,
         'min_new_tokens': 1,
@@ -215,8 +213,8 @@ def evaluate_chat_model():
             json.dump(merged_outputs, open(results_file, 'w'))
             print('Results saved to {}'.format(results_file))
             cmd = 'python internvl/eval/pope/eval_pope.py ' \
-                  '--annotation-dir ./internvl/data/pope/coco ' \
-                  '--question-file ./internvl/data/pope/llava_pope_test.jsonl ' \
+                  '--annotation-dir ./data/pope/coco ' \
+                  '--question-file ./data/pope/llava_pope_test.jsonl ' \
                   '--result-file ' + results_file
             print(cmd)
             os.system(cmd)

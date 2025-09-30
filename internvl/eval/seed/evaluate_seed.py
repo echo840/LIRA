@@ -49,8 +49,8 @@ TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float
 
 ds_collections = {
     'SEEDv1': {
-        'root': 'internvl/data/SEED/',
-        'annotation': 'internvl/data/SEED/seed.jsonl',
+        'root': 'data/SEED/',
+        'annotation': 'data/SEED/seed.jsonl',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
     },

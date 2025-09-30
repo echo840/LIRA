@@ -79,7 +79,7 @@ if [ ${DATASET} == "chair" ]; then
     --nproc_per_node=${GPUS} \
     --master_port=${MASTER_PORT} \
     internvl/eval/chair/evaluate_chair.py --config ${CONFIG} --pth_model  ${PTH_MODEL} --datasets chair_test ${@:4}
-    python ./internvl/eval/chair/chair.py --cap_file ./internvl/results/chair_results.jsonl --image_id_key image_id --caption_key caption --coco_path ./internvl/data/chair/annotations   --save_path ./internvl/data/chair/results/chair_saved.jsonl
+    python ./internvl/eval/chair/chair.py --cap_file ./internvl/results/chair_results.jsonl --image_id_key image_id --caption_key caption --coco_path ./data/chair/annotations   --save_path ./data/chair/results/chair_saved.jsonl
 fi
 
 if [ ${DATASET} == "vqa-okvqa-val" ]; then
@@ -306,11 +306,11 @@ if [ ${DATASET} == "llava-bench" ]; then
     rm -rf results/llava_bench_results_review.jsonl
     python internvl/eval/llava_bench/evaluate_llava_bench.py --config ${CONFIG} --pth_model  ${PTH_MODEL} ${@:4}
     python -u internvl/eval/llava_bench/eval_gpt_review_bench.py \
-      --question internvl/data/llava-bench-in-the-wild/questions.jsonl \
-      --context internvl/data/llava-bench-in-the-wild/context.jsonl \
+      --question data/llava-bench-in-the-wild/questions.jsonl \
+      --context data/llava-bench-in-the-wild/context.jsonl \
       --rule internvl/eval/llava_bench/rule.json \
       --answer-list \
-          internvl/data/llava-bench-in-the-wild/answers_gpt4.jsonl \
+          data/llava-bench-in-the-wild/answers_gpt4.jsonl \
           results/llava_bench_results.jsonl \
       --output \
           results/llava_bench_results_review.jsonl

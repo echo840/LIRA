@@ -57,42 +57,42 @@ TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float
 
 ds_collections = {
     'mmbench_dev_20230712': {
-        'root': 'internvl/data/mmbench/mmbench_dev_20230712.tsv',
+        'root': 'data/mmbench/mmbench_dev_20230712.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'dev',
         'language': 'en'
     },
     'mmbench_dev_cn_20231003': {
-        'root': 'internvl/data/mmbench/mmbench_dev_cn_20231003.tsv',
+        'root': 'data/mmbench/mmbench_dev_cn_20231003.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'dev',
         'language': 'cn'
     },
     'mmbench_dev_en_20231003': {
-        'root': 'internvl/data/mmbench/mmbench_dev_en_20231003.tsv',
+        'root': 'data/mmbench/mmbench_dev_en_20231003.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'dev',
         'language': 'en'
     },
     'mmbench_test_cn_20231003': {
-        'root': 'internvl/data/mmbench/mmbench_test_cn_20231003.tsv',
+        'root': 'data/mmbench/mmbench_test_cn_20231003.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'test',
         'language': 'cn'
     },
     'mmbench_test_en_20231003': {
-        'root': 'internvl/data/mmbench/mmbench_test_en_20231003.tsv',
+        'root': 'data/mmbench/mmbench_test_en_20231003.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'test',
         'language': 'en'
     },
     'ccbench_dev_cn': {
-        'root': 'internvl/data/mmbench/CCBench_legacy.tsv',
+        'root': 'data/mmbench/CCBench_legacy.tsv',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
         'type': 'dev',
@@ -137,28 +137,11 @@ class MMBenchDataset(torch.utils.data.Dataset):
         image = self.df.iloc[idx]['image']
         question = self.df.iloc[idx]['question']
         answer = self.df.iloc[idx]['answer'] if 'answer' in self.df.iloc[0].keys() else None
-        # catetory = self.df.iloc[idx]['category']
-        # l2_catetory = self.df.iloc[idx]['l2-category']
-
-        # image = Image.open(BytesIO(base64.b64decode(image))).convert('RGB')
-        # if self.dynamic_image_size:
-        #     images = dynamic_preprocess(image, image_size=self.input_size,
-        #                                 use_thumbnail=self.use_thumbnail,
-        #                                 max_num=self.max_num)
-        # else:
-        #     images = [image]
-        # pixel_values = [self.transform(image) for image in images]
-        # pixel_values = torch.stack(pixel_values)
 
 
         catetory = self.df.iloc[idx]['category']
-        # l2_catetory = self.df.iloc[idx]['l2-category']
 
         ori_image = Image.open(BytesIO(base64.b64decode(image))).convert('RGB')
-        # if self.root == 'internvl/data/mmbench/mmbench_test_cn_20231003.tsv':
-        #     internvl_images = dynamic_preprocess(ori_image, min_num=self.min_num, max_num=self.max_num,image_size=448, use_thumbnail=True)
-        # else:
-        #     internvl_images = dynamic_preprocess(ori_image, min_num=self.min_num, max_num=self.max_num,image_size=448, use_thumbnail=True)
         internvl_images = dynamic_preprocess(ori_image, min_num=self.min_num, max_num=self.max_num,image_size=448, use_thumbnail=True)
         internvl_pixel_values = [self.transform(internvl_image) for internvl_image in internvl_images]
         internvl_pixel_values = torch.stack(internvl_pixel_values)

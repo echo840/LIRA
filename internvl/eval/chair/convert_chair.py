@@ -17,10 +17,10 @@ def setup_seeds(config):
 
 if __name__=="__main__":
     json_save = []
-    img_files = os.listdir("/home/kas/lz_new/omginternvl/internvl/data/coco/val2014")
+    img_files = os.listdir("data/coco/val2014")
     random.shuffle(img_files)
 
-    with open('/home/kas/lz_new/omginternvl/internvl/data/chair/annotations/instances_val2014.json', 'r') as f:
+    with open('data/chair/annotations/instances_val2014.json', 'r') as f:
         lines = f.readlines()
     coco_anns = json.loads(lines[0])
 
@@ -49,9 +49,9 @@ if __name__=="__main__":
         img_save = {}
         img_save["image_id"] = img_id
 
-        image_path = "/home/kas/lz_new/omginternvl/internvl/data/coco/val2014/" + img_file
+        image_path = "data/coco/val2014/" + img_file
         qu = "Please describe this image in detail."
         json_save.append({"image":image_path,"question":qu,"question_id": img_id, "answer": ""})
-    with open('/home/kas/lz_new/omginternvl/internvl/data/chair/chair_test.jsonl', 'w') as f:
+    with open('data/chair/chair_test.jsonl', 'w') as f:
         for entry in json_save:
             f.write(json.dumps(entry) + '\n')

@@ -59,7 +59,7 @@ TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float
 ds_collections = {
     'chair_test': {
         'train': None,
-        'test': "./internvl/data/chair/chair_test.jsonl",
+        'test': "./data/chair/chair_test.jsonl",
         'metric': None,
         'max_new_tokens': 512,
     },

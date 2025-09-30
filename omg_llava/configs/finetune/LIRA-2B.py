@@ -41,44 +41,34 @@ omg_ov_class_embed_path='./pretrained/omg_llava/convnext_large_d_320_CocoPanopti
 omg_head_pretrain_pth_path = './pretrained/omg_llava/omg_seg_convl.pth'  # Please change to your own path
 
 # Data
-data_root = './data/llava_data/'
-data_path = data_root + 'LLaVA-Instruct-150K/llava_v1_5_mix665k.json'
-image_folder = data_root + 'llava_images'
 
-internvl2_datapath = "/home/kas/lz_new/omginternvl/data/final_common/stage2.json"
-internvl2_folder = "/home/kas/train_data_all/"
+internvl2_datapath = "./data/finetune"
+internvl2_folder = "./data/finetune/"
 
 
 glamm_data_root = './data/glamm_data/'
 
 refcocog_image_path = glamm_data_root + 'images/coco2014/train2014/'
-refcocog_ann_file = glamm_data_root + 'annotations/RefCOCOg_GCG_train.json'
 refcocog_ann_file_highlight = glamm_data_root + 'annotations/RefCOCOg_GCG_train_highlight_bg.json'
 
 
 grandf_image_path = glamm_data_root + 'images/grandf/train/'
-grandf_ann_file = glamm_data_root + 'annotations/GranDf_HA_GCG_train.json'
 grandf_ann_file_highlight  = glamm_data_root + 'annotations/GranDf_HA_GCG_train_highlight_bg.json'
 
 flickr_image_path = glamm_data_root + 'images/flickr30k/Flickr30K/'
-flickr_ann_file = glamm_data_root + 'annotations/flickr_mergedGT_GCG_train.json'
 flickr_ann_file_highlight = glamm_data_root + 'annotations/flickr_mergedGT_GCG_train_highlight_bg.json'
 
 psg_image_path = glamm_data_root + 'images/coco2017/'
-psg_ann_file = glamm_data_root + 'annotations/OpenPsgGCG_train.json'
 psg_ann_file_highlight = glamm_data_root + 'annotations/OpenPsgGCG_train_highlight_bg.json'
 
 
 referring_refcoco_image_path = refcocog_image_path
-referring_refcoco_data_path = "./data/ref_seg/"
 referring_refcoco_data_path_highlight = "./data/ref_seg_high/"
 
 referring_refcoco_plus_image_path = refcocog_image_path
-referring_refcoco_plus_data_path = "./data/ref_seg/"
 referring_refcoco_plus_data_path_highlight = "./data/ref_seg_high/"
 
 referring_refcocog_image_path = refcocog_image_path
-referring_refcocog_data_path = "./data/ref_seg/"
 referring_refcocog_data_path_highlight = "./data/ref_seg_high/"
 
 prompt_template = PROMPT_TEMPLATE.internvl2_chat

@@ -52,7 +52,7 @@ from tqdm import tqdm
 TORCH_DTYPE_MAP = dict(fp16=torch.float16, bf16=torch.bfloat16, fp32=torch.float32, auto='auto')
 ds_collections = {
     'sqa_test': {
-        'root': 'internvl/data/scienceqa/scienceqa_test_img.jsonl',
+        'root': 'data/scienceqa/scienceqa_test_img.jsonl',
         'max_new_tokens': 100,
         'min_new_tokens': 1,
     },

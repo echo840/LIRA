@@ -116,8 +116,7 @@ ds_collections = {
     },
     'ai2diagram_test': {
         'train': 'internvl/data/ai2diagram/train.jsonl',
-        # 'test': 'internvl/data/ai2d/test_vlmevalkit.jsonl',
-        'test': "internvl/data/ai2d/ai2d_test_1014.jsonl",
+        'test': "internvl/data/ai2d/ai2d_test.jsonl",
         'metric': 'accuracy',
         'max_new_tokens': 10,
     },

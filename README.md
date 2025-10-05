@@ -4,7 +4,8 @@ LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved 
 </h1>
 
 [![arXiv](https://img.shields.io/badge/Arxiv-LIRA-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.06272)
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-black.svg?logo=HuggingFace)](https://huggingface.co/echo840/LIRA)
+[![Model Weight](https://img.shields.io/badge/HuggingFace-black.svg?logo=HuggingFace)](https://huggingface.co/echo840/LIRA)
+[![Data](https://img.shields.io/badge/Data-yellow)](https://huggingface.co/datasets/echo840/LIRA_Data)
 [![GitHub issues](https://img.shields.io/github/issues/echo840/LIRA?color=critical&label=Issues)](https://github.com/echo840/LIRA/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/echo840/LIRA?color=success&label=Issues)](https://github.com/echo840/LIRA/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub views](https://komarev.com/ghpvc/?username=echo840&repo=LIRA&color=brightgreen&label=Views)](https://github.com/echo840/LIRA)
@@ -32,6 +33,10 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 
 
 ## Install
+
+TODO
+
+## Dataset
 
 
 

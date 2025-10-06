@@ -37,7 +37,11 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 TODO
 
 ## Dataset
-
+Download data from [data](https://huggingface.co/datasets/echo840/LIRA_Data).
+```python 
+cat data.zip.part* > data.zip
+unzip data.zip
+```
 
 
 ## Weights

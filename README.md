@@ -99,14 +99,11 @@ Our code is built upon [OMGLLaVA](https://github.com/lxtGH/OMG-Seg) and [InternV
 ## Citation
 If you wish to refer to the baseline results published here, please use the following BibTeX entries:
 ```BibTeX
-@misc{li2025lirainferringsegmentationlarge,
-      title={LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance}, 
-      author={Zhang Li and Biao Yang and Qiang Liu and Shuo Zhang and Zhiyin Ma and Liang Yin and Linger Deng and Yabo Sun and Yuliang Liu and Xiang Bai},
-      year={2025},
-      eprint={2507.06272},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2507.06272}, 
+@inproceedings{li2025lirainferringsegmentationlarge,
+  title={LIRA: Inferring Segmentation in Large Multi-modal Models with Local Interleaved Region Assistance},
+  author={Zhang Li and Biao Yang and Qiang Liu and Shuo Zhang and Zhiyin Ma and Liang Yin and Linger Deng and Yabo Sun and Yuliang Liu and Xiang Bai},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2025}
 }
 ```
 

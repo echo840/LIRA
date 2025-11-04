@@ -96,6 +96,9 @@ bash ./scripts/eval_vqa.sh # Evaluation on Comprehension Tasks.
 Our code is built upon [OMGLLaVA](https://github.com/lxtGH/OMG-Seg) and [InternVL2](https://github.com/OpenGVLab/InternVL), and we sincerely thank them for providing the code and base models. We also thank [OPERA](https://github.com/shikiw/OPERA) for providing the evaluation code for chair.
 
 
+## Copyright
+If you have any questions, please feel free to contact us at zhangli123@hust.edu.cn.
+
 ## Citation
 If you wish to refer to the baseline results published here, please use the following BibTeX entries:
 ```BibTeX

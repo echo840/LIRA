@@ -34,7 +34,7 @@ While large multi-modal models (LMMs) demonstrate promising capabilities in segm
 
 ## Install
 
-TODO
+Please follow the instructions in [omg_llava](https://github.com/lxtGH/OMG-Seg/tree/main/omg_llava) and ensure that transformers ≥ 4.37.2 is installed. We will update the environment configuration within November.
 
 ## Dataset
 Download data from [data](https://huggingface.co/datasets/echo840/LIRA_Data).
